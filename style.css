@@ -1,0 +1,187 @@
+body {
+	background-image: url("https://www.10wallpaper.com/wallpaper/1920x1200/1111/Android_logo_robotics_Desktop_Wallpapers_04_1920x1200.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+}	
+
+h1 {
+	color: 	rgba(255, 191, 0, 0.8);
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 100px;
+	font-style: italic;
+	font-size: 2em;
+	border-bottom: 2px solid purple;
+	border-right: 2px solid purple;
+	width: 400px;
+	box-shadow: 8px 8px 4px #808080; 
+	margin-top: 10px;
+}
+
+.robots {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 
+	 background-color: #59C279;
+}
+
+.head { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+	display: flex;
+	align-self: center;
+} 
+
+.eyes {
+	display: flex; 
+	justify-content: center;
+}
+
+.head:hover {
+	width: 300px;
+    transition: 1s ease-in-out;
+}
+
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex;
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+} 
+
+.left_arm { 
+	margin-right: 10px;
+} 
+
+.left_arm:hover {
+	transform: translateY(-15px);
+}
+
+.right_arm { 
+	margin-left: 10px;
+}
+
+.right_arm:hover {
+	transform: translateY(-15px);
+} 
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px;
+}
+
+.torso:hover {
+	transform: rotateY(-15deg);
+} 
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;
+	display: flex;
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px;
+	display: flex;
+	margin-left: 50px;
+} 
+
+.left_leg { 
+	margin-left: 40px; 
+} 
+
+.left_leg:hover {
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.right_leg {
+	margin-right: 30px;
+}
+
+.right_leg:hover { 
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px;
+	background-color: white;
+	animation: colorchange 5s;
+	animation-duration: 4s;
+	animation-delay: 3s;
+	animation-direction: alternate; 
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+
+}
+
+@keyframes colorchange {
+	0% {background: white}
+	25% {background: brown}
+	50% {background: green}
+	75% {background: yellow}
+	100%{background: white}
+} 
+
+.left_eye { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 120px; 
+}
+
+footer p {
+	color: rgba(62, 223, 223, 0.4);
+	text-align: right;
+	text-decoration: underline;
+	text-transform: none;
+	margin-top: 200px;
+}
+
+
+
+
+
+
+
+
